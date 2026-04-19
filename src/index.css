@@ -1,0 +1,59 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cream text-espresso font-body;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-heading;
+  }
+}
+
+@layer utilities {
+  .section-padding {
+    @apply px-6 py-20 md:px-16 lg:px-24;
+  }
+  .btn-primary {
+    @apply bg-caramel text-white px-6 py-3 rounded-full font-body font-medium hover:bg-brown transition-all duration-300;
+  }
+  .btn-outline {
+    @apply border-2 border-caramel text-caramel px-6 py-3 rounded-full font-body font-medium hover:bg-caramel hover:text-white transition-all duration-300;
+  }
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-parchment text-jetblack font-body;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-heading;
+  }
+}
+
+@layer utilities {
+  .section-padding {
+    @apply px-6 py-20 md:px-16 lg:px-24;
+  }
+  .btn-primary {
+    @apply bg-palmleaf text-parchment px-6 py-3 rounded-full font-body font-medium hover:bg-darkslategrey transition-all duration-300;
+  }
+  .btn-outline {
+    @apply border-2 border-palmleaf text-palmleaf px-6 py-3 rounded-full font-body font-medium hover:bg-palmleaf hover:text-parchment transition-all duration-300;
+  }
+}
