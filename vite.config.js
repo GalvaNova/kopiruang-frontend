@@ -17,10 +17,19 @@ export default defineConfig({
     sourcemap: false,
     rollupOptions: {
       output: {
-        manualChunks: {
-          vendor: ["react", "react-dom"],
-          icons: ["react-icons"],
-          http: ["axios"],
+        manualChunks: (id) => {
+          if (
+            id.includes("node_modules/react") ||
+            id.includes("node_modules/react-dom")
+          ) {
+            return "vendor";
+          }
+          if (id.includes("node_modules/react-icons")) {
+            return "icons";
+          }
+          if (id.includes("node_modules/axios")) {
+            return "http";
+          }
         },
       },
     },
